@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 507862268674759019}
   - component: {fileID: 8582479786426303108}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 689c642398c83794facad14daf5b023d, type: 2}
+  - {fileID: 2100000, guid: 5c81ffc9bfaf7b84d929262ee1d57e40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 6858823730150284952}
   - component: {fileID: 1164514673964250033}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f50f818e789c104785ab436297be894, type: 2}
+  - {fileID: 2100000, guid: 70cee3f471ba98e418ce8094f7e95b33, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -237,6 +237,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &671184875624050309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3416687908069757481}
+  - component: {fileID: 4736542792829325735}
+  m_Layer: 0
+  m_Name: CrossroadsLeft
+  m_TagString: CrossroadsLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3416687908069757481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671184875624050309}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4736542792829325735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671184875624050309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 0.4}
+  m_Center: {x: 3.05, y: 2.37, z: 2.7}
 --- !u!1 &873594770195338082
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,8 +316,9 @@ Transform:
   - {fileID: 119574040844211772}
   - {fileID: 6753213953426166981}
   - {fileID: 6746035261292079510}
+  - {fileID: 8222719050405083171}
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &6321027932075572799
 MeshFilter:
@@ -413,7 +458,7 @@ GameObject:
   - component: {fileID: 7508280569210660059}
   - component: {fileID: 724582836545925512}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Rad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +537,7 @@ GameObject:
   - component: {fileID: 1681896649982928526}
   - component: {fileID: 5828042474956032793}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -538,7 +583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f50f818e789c104785ab436297be894, type: 2}
+  - {fileID: 2100000, guid: 70cee3f471ba98e418ce8094f7e95b33, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -594,8 +639,9 @@ Transform:
   - {fileID: 3085752410106431456}
   - {fileID: 3726087883135905330}
   - {fileID: 6437508373104772830}
+  - {fileID: 8737493986248313497}
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &9099150908189548573
 MeshFilter:
@@ -644,6 +690,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1727348090691516220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3445411567635869778}
+  - component: {fileID: 7776770589527090164}
+  m_Layer: 0
+  m_Name: Stop
+  m_TagString: stop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &3445411567635869778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727348090691516220}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.6, y: -0.58533335, z: -22}
+  m_LocalScale: {x: 40, y: 0.06666667, z: 50}
+  m_Children: []
+  m_Father: {fileID: 5525337949431571968}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7776770589527090164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727348090691516220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3201183, y: 7.8565865, z: 0.053183675}
+  m_Center: {x: 0.24399573, y: 4.399439, z: -0.47340816}
 --- !u!1 &1997504387036180843
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +904,7 @@ GameObject:
   - component: {fileID: 4242321924554868075}
   - component: {fileID: 6572954857623453569}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -860,7 +950,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 689c642398c83794facad14daf5b023d, type: 2}
+  - {fileID: 2100000, guid: 5c81ffc9bfaf7b84d929262ee1d57e40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -893,7 +983,7 @@ GameObject:
   - component: {fileID: 8151752646230095352}
   - component: {fileID: 1839544653200645985}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -939,7 +1029,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 689c642398c83794facad14daf5b023d, type: 2}
+  - {fileID: 2100000, guid: 5c81ffc9bfaf7b84d929262ee1d57e40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -960,6 +1050,94 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &2553576583479271584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7524800540312294538}
+  - component: {fileID: 624869306289051207}
+  m_Layer: 0
+  m_Name: CrossroadsLeft
+  m_TagString: CrossroadsLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7524800540312294538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553576583479271584}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &624869306289051207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553576583479271584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 0.4}
+  m_Center: {x: 3.05, y: 2.37, z: 2.7}
+--- !u!1 &2599602812505784541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 199263756784070393}
+  - component: {fileID: 1741514624675243364}
+  m_Layer: 0
+  m_Name: CrossroadsRight
+  m_TagString: CrossroadsRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &199263756784070393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2599602812505784541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1741514624675243364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2599602812505784541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 4, z: 4}
+  m_Center: {x: 2.75, y: 2.37, z: 2.55}
 --- !u!1 &3044366453972626247
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +1150,7 @@ GameObject:
   - component: {fileID: 1855971151750665921}
   - component: {fileID: 7047420292084555956}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,7 +1196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f50f818e789c104785ab436297be894, type: 2}
+  - {fileID: 2100000, guid: 70cee3f471ba98e418ce8094f7e95b33, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1051,7 +1229,7 @@ GameObject:
   - component: {fileID: 2945606867584166784}
   - component: {fileID: 664976872031298679}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1097,7 +1275,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 689c642398c83794facad14daf5b023d, type: 2}
+  - {fileID: 2100000, guid: 5c81ffc9bfaf7b84d929262ee1d57e40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1153,8 +1331,9 @@ Transform:
   - {fileID: 3800225668970677365}
   - {fileID: 2321875425373833512}
   - {fileID: 5408010095289986189}
+  - {fileID: 3445411567635869778}
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8003314948175254042
 MeshFilter:
@@ -1203,6 +1382,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &3709255312425781754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7496381471093858919}
+  - component: {fileID: 88700101257623745}
+  m_Layer: 0
+  m_Name: CrossroadsRight
+  m_TagString: CrossroadsRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7496381471093858919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3709255312425781754}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &88700101257623745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3709255312425781754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 4, z: 4}
+  m_Center: {x: 2.75, y: 2.37, z: 2.55}
 --- !u!1 &3769616970822204617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1438,7 @@ GameObject:
   - component: {fileID: 2691116881336497821}
   - component: {fileID: 6240822824327589192}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Rad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,7 +1517,7 @@ GameObject:
   - component: {fileID: 3569792205229248231}
   - component: {fileID: 2140737220695574996}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1340,7 +1563,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f50f818e789c104785ab436297be894, type: 2}
+  - {fileID: 2100000, guid: 70cee3f471ba98e418ce8094f7e95b33, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1391,7 +1614,7 @@ Transform:
   m_LocalScale: {x: 0.12, y: 1, z: 0.12}
   m_Children: []
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6578075952528653999
 MeshFilter:
@@ -1598,6 +1821,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &5453504734188568228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5836764258768503640}
+  - component: {fileID: 570393881930817841}
+  m_Layer: 0
+  m_Name: Stop (2)
+  m_TagString: stop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5836764258768503640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453504734188568228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.6, y: -0.58533335, z: -22}
+  m_LocalScale: {x: 40, y: 0.06666667, z: 50}
+  m_Children: []
+  m_Father: {fileID: 8442063886843862438}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &570393881930817841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453504734188568228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3201183, y: 7.8565865, z: 0.053183675}
+  m_Center: {x: 0.24399573, y: 4.399439, z: -0.47340816}
 --- !u!1 &5498669387864173323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,7 +1895,7 @@ Transform:
   m_LocalScale: {x: 0.12, y: 1, z: 0.12}
   m_Children: []
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7187602661886782661
 MeshFilter:
@@ -1688,6 +1955,7 @@ GameObject:
   - component: {fileID: 1909335427965837508}
   - component: {fileID: 2114729100782434278}
   - component: {fileID: 5790924789979827045}
+  - component: {fileID: -7811861333327560666}
   m_Layer: 0
   m_Name: RoadX
   m_TagString: Untagged
@@ -1706,14 +1974,22 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children:
+  - {fileID: 1741510036164241747}
+  - {fileID: 8442063886843862438}
+  - {fileID: 442977650448541543}
+  - {fileID: 5525337949431571968}
   - {fileID: 7364311337777344228}
   - {fileID: 6142523845736071827}
   - {fileID: 2398523469992099006}
   - {fileID: 6347006400914866357}
-  - {fileID: 5525337949431571968}
-  - {fileID: 442977650448541543}
-  - {fileID: 8442063886843862438}
-  - {fileID: 1741510036164241747}
+  - {fileID: 199263756784070393}
+  - {fileID: 5306332536499813963}
+  - {fileID: 3210808940220251869}
+  - {fileID: 7496381471093858919}
+  - {fileID: 3416687908069757481}
+  - {fileID: 8826212401220939243}
+  - {fileID: 7433759629345903442}
+  - {fileID: 7524800540312294538}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1764,6 +2040,48 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-7811861333327560666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534548841067077603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24766487fe9e3ef469ab017b6f78c8b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interval: 4
+  TypeCrossroadsController: 0
+  Stop:
+  - {fileID: 7776770589527090164}
+  - {fileID: 4452779224179447841}
+  - {fileID: 570393881930817841}
+  - {fileID: 9129546699454127413}
+  LightYellow:
+  - {fileID: 664976872031298679}
+  - {fileID: 1839544653200645985}
+  - {fileID: 8582479786426303108}
+  - {fileID: 6572954857623453569}
+  LightGreen:
+  - {fileID: 1164514673964250033}
+  - {fileID: 7047420292084555956}
+  - {fileID: 5828042474956032793}
+  - {fileID: 2140737220695574996}
+  LightRad:
+  - {fileID: 724582836545925512}
+  - {fileID: 7710417908478174772}
+  - {fileID: 6240822824327589192}
+  - {fileID: 356050772020327707}
+  MaterialLightOn:
+  - {fileID: 2100000, guid: 8f50f818e789c104785ab436297be894, type: 2}
+  - {fileID: 2100000, guid: 689c642398c83794facad14daf5b023d, type: 2}
+  - {fileID: 2100000, guid: b90e0eb95cab315428d5b5aeb387b5f4, type: 2}
+  MaterialLightOff:
+  - {fileID: 2100000, guid: 70cee3f471ba98e418ce8094f7e95b33, type: 2}
+  - {fileID: 2100000, guid: 5c81ffc9bfaf7b84d929262ee1d57e40, type: 2}
+  - {fileID: 2100000, guid: 26cf9f1423ef9224aaaf934053283f72, type: 2}
 --- !u!1 &5542942456994976316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +2252,7 @@ GameObject:
   - component: {fileID: 7036890302808186809}
   - component: {fileID: 7710417908478174772}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Rad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2031,7 +2349,7 @@ Transform:
   m_LocalScale: {x: 0.12, y: 1, z: 0.12}
   m_Children: []
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &673769387753518680
 MeshFilter:
@@ -2080,6 +2398,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &6704382137623059994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8826212401220939243}
+  - component: {fileID: 7920261362548877271}
+  m_Layer: 0
+  m_Name: CrossroadsLeft
+  m_TagString: CrossroadsLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8826212401220939243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704382137623059994}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &7920261362548877271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704382137623059994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 0.4}
+  m_Center: {x: 3.05, y: 2.37, z: 2.7}
 --- !u!1 &6855815868580590086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,8 +2477,9 @@ Transform:
   - {fileID: 551855363625811619}
   - {fileID: 8961493784586760140}
   - {fileID: 734011691474052445}
+  - {fileID: 5836764258768503640}
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &8333631511779862148
 MeshFilter:
@@ -2165,6 +2528,94 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &6871345415940435514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8737493986248313497}
+  - component: {fileID: 4452779224179447841}
+  m_Layer: 0
+  m_Name: Stop (1)
+  m_TagString: stop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &8737493986248313497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6871345415940435514}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.600004, y: -0.58533335, z: -22}
+  m_LocalScale: {x: 40, y: 0.06666667, z: 50}
+  m_Children: []
+  m_Father: {fileID: 442977650448541543}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &4452779224179447841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6871345415940435514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3201183, y: 7.8565865, z: 0.053183675}
+  m_Center: {x: 0.24399573, y: 4.399439, z: -0.47340816}
+--- !u!1 &6926007032594244590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7433759629345903442}
+  - component: {fileID: 6104126811984806869}
+  m_Layer: 0
+  m_Name: CrossroadsLeft
+  m_TagString: CrossroadsLeft
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7433759629345903442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926007032594244590}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &6104126811984806869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926007032594244590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 0.4}
+  m_Center: {x: 3.05, y: 2.37, z: 2.7}
 --- !u!1 &7261578506024963707
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2725,7 @@ Transform:
   m_LocalScale: {x: 0.12, y: 1, z: 0.12}
   m_Children: []
   m_Father: {fileID: 1909335427965837508}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7688382406049469034
 MeshFilter:
@@ -2323,6 +2774,138 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &7449446566326865117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8222719050405083171}
+  - component: {fileID: 9129546699454127413}
+  m_Layer: 0
+  m_Name: Stop (3)
+  m_TagString: stop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &8222719050405083171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7449446566326865117}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.6, y: -0.58533335, z: -22}
+  m_LocalScale: {x: 40, y: 0.06666667, z: 50}
+  m_Children: []
+  m_Father: {fileID: 1741510036164241747}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &9129546699454127413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7449446566326865117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3201183, y: 7.8565865, z: 0.053183675}
+  m_Center: {x: 0.24399573, y: 4.399439, z: -0.47340816}
+--- !u!1 &7785804832530306135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3210808940220251869}
+  - component: {fileID: 4223630708174695784}
+  m_Layer: 0
+  m_Name: CrossroadsRight
+  m_TagString: CrossroadsRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3210808940220251869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785804832530306135}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &4223630708174695784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785804832530306135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 4, z: 4}
+  m_Center: {x: 2.75, y: 2.37, z: 2.55}
+--- !u!1 &7799906994924305755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5306332536499813963}
+  - component: {fileID: 8088407197809723079}
+  m_Layer: 0
+  m_Name: CrossroadsRight
+  m_TagString: CrossroadsRight
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5306332536499813963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799906994924305755}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.072685, y: 1.4537001, z: 0.072685}
+  m_Children: []
+  m_Father: {fileID: 1909335427965837508}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &8088407197809723079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799906994924305755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 4, z: 4}
+  m_Center: {x: 2.75, y: 2.37, z: 2.55}
 --- !u!1 &7967167205352927510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,7 +2997,7 @@ GameObject:
   - component: {fileID: 1536398053359780025}
   - component: {fileID: 356050772020327707}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Rad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
