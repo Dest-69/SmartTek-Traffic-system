@@ -8,8 +8,10 @@ TagManager:
   - turnRight
   - turnLeft
   - stop
-  - CrossroadsRight
-  - CrossroadsLeft
+  - CrossroadsX
+  - ForwardLeft
+  - ForwardRight
+  - LeftRight
   layers:
   - Default
   - TransparentFX

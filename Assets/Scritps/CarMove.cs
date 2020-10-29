@@ -6,7 +6,6 @@ public class CarMove : MonoBehaviour
 {
     private RaycastHit hit = new RaycastHit();
     [SerializeField] private float Distance;
-    [SerializeField] private float SpeedMove;
     enum vectorMove
     {
         Up,
@@ -15,6 +14,9 @@ public class CarMove : MonoBehaviour
         Right
     }
     [SerializeField] private vectorMove VectorMove;
+    bool CanToReact = true;
+    private float SpeedMove = 2.5f;
+    float stopedTime;
     void FixedUpdate()
     {
         if (Physics.Raycast(transform.position, transform.right, out hit, Mathf.Infinity))
@@ -24,6 +26,10 @@ public class CarMove : MonoBehaviour
                 case "bike":
                     if (hit.distance > Distance)
                         Move();
+                    else
+                    {
+                        stopedTime += Time.deltaTime;
+                    }
                     return;
 
                 case "stop":
@@ -31,69 +37,110 @@ public class CarMove : MonoBehaviour
                         Move();
                     return;
 
-                case "CrossroadsRight":
-
-                    if (hit.distance < 0.05f)
+                case "ForwardRight":
+                    if (hit.distance < 0.1f && CanToReact)
                     {
-                        bool isBikeTurn;
-                        isBikeTurn = (Random.value < 0.5);
-                        if (isBikeTurn)
+                        switch (RandomizeDirrectionWay(2))
                         {
-                            Turn(90);
-                            TurnBike("right");
-                            StartCoroutine(HideForRayCast(hit.collider));
+                            case 0:
+                                break;
+                            case 1:
+                                StartCoroutine(PointToTurn("right"));
+                                break;
+                            default: break;
                         }
-                        else Move();
+                        StartCoroutine(HideForRayCast());
                     }
                     Move();
                     return;
-                case "CrossroadsLeft":
 
-                    if (hit.distance < 0.05f)
+                case "ForwardLeft":
+                    if (hit.distance < 0.1f && CanToReact)
                     {
-                        bool isBikeTurn;
-                        isBikeTurn = (Random.value < 0.5);
-                        if (isBikeTurn)
+                        switch (RandomizeDirrectionWay(2))
                         {
-                            Turn(-90);
-                            TurnBike("left");
-                            StartCoroutine(HideForRayCast(hit.collider));
+                            case 0:
+                                break;
+                            case 1:
+                                StartCoroutine(PointToTurn("left"));
+                                break;
+                            default: break;
                         }
-                        else Move();
+                        StartCoroutine(HideForRayCast());
+                    }
+                    Move();
+                    return;
+
+                case "LeftRight":
+                    if (hit.distance < 0.1f && CanToReact)
+                    {
+                        switch (RandomizeDirrectionWay(2))
+                        {
+                            case 0:
+                                StartCoroutine(PointToTurn("right"));
+                                break;
+                            case 1:
+                                StartCoroutine(PointToTurn("left"));
+                                break;
+                            default: break;
+                        }
+                        StartCoroutine(HideForRayCast());
+                    }
+                    Move();
+                    return;
+
+                case "CrossroadsX":
+                    if (hit.distance < 0.1f && CanToReact)
+                    {
+                        switch (RandomizeDirrectionWay(3))
+                        {
+                            case 0:
+                                StartCoroutine(PointToTurn("right"));
+                                break;
+                            case 1:
+                                StartCoroutine(PointToTurn("left"));
+                                break;
+                            case 2:
+                                break;
+                            default: break;
+                        }
+                        StartCoroutine(HideForRayCast());
                     }
                     Move();
                     return;
 
                 case "turnRight":
-                    if (hit.distance < 0.05f)
+                    if (hit.distance < 0.1f && CanToReact)
                     {
-                        Turn(90);
                         TurnBike("right");
-                        StartCoroutine(HideForRayCast(hit.collider));
+                        StartCoroutine(HideForRayCast());
                     }
-                    else Move();
+                    Move();
                     return;
 
                 case "turnLeft":
-                    if (hit.distance < 0.05f)
+                    if (hit.distance < 0.1f && CanToReact)
                     {
-                        Turn(-90);
                         TurnBike("left");
-                        StartCoroutine(HideForRayCast(hit.collider));
+                        StartCoroutine(HideForRayCast());
                     }
-                    else Move();
+                    Move();
                     return;
 
                 default: return;
             }
         }
-        Debug.DrawRay(transform.position, transform.right, Color.green);
     }
-    IEnumerator HideForRayCast(Collider me)
+
+    short RandomizeDirrectionWay(short i)
     {
-        me.enabled = false;
-        yield return new WaitForSeconds(1);
-        me.enabled = true;
+        return (short)Random.Range(0, i);
+    }
+    IEnumerator HideForRayCast()
+    {
+        CanToReact = false;
+        yield return new WaitForSeconds(2f);
+        CanToReact = true;
     }
     void Move()
     {
@@ -115,8 +162,26 @@ public class CarMove : MonoBehaviour
         return new Vector3();
     }
 
+    IEnumerator PointToTurn(string _turnDir)
+    {
+        stopedTime = 0;
+        if (_turnDir == "right")
+        {
+            yield return new WaitForSeconds(0.16f + stopedTime);
+        }
+        else if (_turnDir == "left")
+        {
+            yield return new WaitForSeconds(0.46f + stopedTime);
+        }
+        TurnBike(_turnDir);
+        yield return null;
+    }
+
     void TurnBike(string turnDir)
     {
+        if (turnDir == "left") Turn(-90);
+        else if (turnDir == "right") Turn(90);
+
         switch (VectorMove)
         {
             case vectorMove.Up:

@@ -202,6 +202,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f4d721b7179ed4e9000c9eb054260a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Distance: 0.75
-  SpeedMove: 2.5
+  Distance: 0.4
   VectorMove: 3
